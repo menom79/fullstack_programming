@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Exercise 03 - array [2p] </title>
+        <script>
+            window.onload = function() {
+                let array = ["JavaScript", "is", "excellent!"]
+                let result = ""
+                for (let i = 0; i < array.length; i++)
+                {
+                    result += array[i]
+                    if(i!=2)
+                        result += " "
+                }
+                console.log(result)
+                document.getElementById("demo").textContent=result
+            }
+        </script>
+    </head>
+        
+    <body>
+        <h1>Exercise 03 - array [2p]</h1>
+        <p id="demo"> </p>
+    </body>
+
+</html>
