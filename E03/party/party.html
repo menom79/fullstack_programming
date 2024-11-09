@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Color Changer</title>
+    <link rel="stylesheet" href="party.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Party Color Changer</h1>
+        <div class="input-group">
+            <label for="partyText">What Party?</label>
+            <input type="text" id="partyText" pattern="[A-Za-z]+" placeholder="Type text here (no numbers)">
+        </div>
+        <div class="input-group">
+            <label for="colorSelect">Select Party Color:</label>
+            <select id="colorSelect">
+                <option value="#ff0000">Red</option>
+                <option value="#00ff00">Green</option>
+                <option value="#0000ff">Blue</option>
+            </select>
+        </div>
+        <button id="changeColorButton">Change Party Color</button>
+        <div class="result" id="resultArea"></div>
+    </div>
+
+    <script src="party.js"></script>
+</body>
+
+</html>
