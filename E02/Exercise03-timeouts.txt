@@ -1,0 +1,35 @@
+Exercise 03 - timeouts [4p]
+
+const print = (str, taskTime) => {
+setTimeout(function() {
+    console.log(`${str} finished!`)
+}, taskTime)
+}
+
+// It uses "setTimeout" to log a message to the console after the specified taskTime.
+
+const execute = (str, taskTime, callback)  => {  
+callback(str, taskTime)
+}
+
+// It executes the callback function with str and taskTime.
+
+console.log("Task1 to execution...")
+execute('Task1', 2000, print)
+
+// It prints "Task1 to execution...", then executes the execute function with parameters 'Task1', 2000, and the print function.
+
+console.log("Task2 to execution...")
+execute('Task2', 2000, print)
+
+// It prints "Task2 to execution...", then executes the execute function with parameters 'Task2', 2000, and the print function.
+
+console.log("Task3 to execution...")
+execute('Task3', 500, print)
+
+// It prints "Task3 to execution...", then executes the execute function with parameters 'Task3', 500, and the print function.
+
+console.log("Last code line executed!")
+
+// It prints "Last code line executed!".
+
