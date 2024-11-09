@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise 06 - loops [4p]</title>
+</head>
+<body>
+    <h1>Exercise 06 - loops [4p]</h1>
+    <pre id="output"></pre>
+
+    <script>
+        let array = [11, 22, 33, 44];
+        let sum = 0;
+        let count = 0;
+        let average;
+        let lines = '';
+
+        for (const value of array) {
+            sum += value;
+            count++;
+        }
+
+        for (let i = 0; i < array.length; i++) {
+            lines += `array[${i}] = ${array[i]}\n`;
+        }
+
+        average = (sum / count).toFixed(2);
+
+        const output = document.getElementById("output");
+        output.textContent = `${lines}\n\ncount: ${count}\nsum: ${sum}\naverage: ${average}`;
+    </script>
+</body>
+</html>
