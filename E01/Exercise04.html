@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise 04 - functions [2p]</title>
+</head>
+<body>
+    <h1>Exercise 04 - functions [2p]</h1>
+    <p id="numbersParagraph"></p>
+    <p id="biggestNumberParagraph"></p>
+
+    <script>
+        let num1 = 4;
+        let num2 = 1;
+        let num3 = 8;
+
+        function findBiggestNumber(num1, num2, num3) {
+            let biggestNumber = Math.max(num1, num2, num3);
+            return biggestNumber;
+        }
+
+        console.log(`Number 1: ${num1}`);
+        console.log(`Number 2: ${num2}`);
+        console.log(`Number 3: ${num3}`);
+
+        let result = findBiggestNumber(num1, num2, num3);
+        console.log(`The biggest number is: ${result}`);
+
+        document.getElementById("numbersParagraph").textContent = `Numbers: ${num1}, ${num2}, ${num3}`;
+        document.getElementById("biggestNumberParagraph").textContent = `The biggest number is: ${result}`;
+    </script>
+</body>
+</html>
