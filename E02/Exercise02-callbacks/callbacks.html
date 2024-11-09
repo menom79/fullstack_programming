@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callbacks</title>
+</head>
+
+<h2>Exercise 02 - callbacks [4p]</h2>
+
+<body>
+    <script>
+        const myFunctionWithCallback = (p1, p2, callback) => {
+            return callback(p1, p2);
+        };
+
+        const myFunc = (p1, p2) => `Pizza with ${p1} and ${p2}`;
+        const result = myFunctionWithCallback('ham', 'cheese', myFunc);
+        console.log(result);
+    </script>
+</body>
+
+</html>
