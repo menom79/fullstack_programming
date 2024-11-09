@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Evaluation</title>
+    <link rel="stylesheet" href="tools.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Evaluation</h1>
+        <div class="input-group">
+            <label for="test1">Test 1:</label>
+            <input type="number" id="test1" min="0" max="24">
+        </div>
+        <div class="input-group">
+            <label for="test2">Test 2:</label>
+            <input type="number" id="test2" min="0" max="24">
+        </div>
+        <div class="input-group">
+            <label for="test3">Test 3:</label>
+            <input type="number" id="test3" min="0" max="24">
+        </div>
+        <div class="input-group">
+            <label for="test4">Test 4:</label>
+            <input type="number" id="test4" min="0" max="24">
+        </div>
+        <button onclick="calculateGrade()">Calculate Grade</button>
+        <div class="result">
+            <p>Total Points: <span id="totalPoints"></span></p>
+            <p>Grade: <span id="grade"></span></p>
+        </div>
+    </div>
+
+    <script src="tools.js"></script>
+</body>
+
+</html>
